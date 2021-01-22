@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intro Page</title>
+  <meta name="description" content="Github Pages HTML Demo">  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div id="top">
+      In the words of many a program: <code>Hello World!</code><br>
+      <p>
+      I'm Diego Alfaro, a third-year undergrad double majoring in <span>computer science</span> and <span>linguistics</span> at UCSD.
+      </p>
+      <nav>
+        <a href="#cs_info">My CS Knowledge</a> |
+        <a href="#misc_info">More About Me</a>
+      </nav>
+    </div>
+    <hr>
+  </header>
+  <main>
+    <div id="cs_info">
+      <h1>My CS Knowledge</h1>
+
+      <h2>Programming Languages</h2>
+      <section>
+        <h3>Ones I've used twice or more</h3>
+        <ul>
+          <li>Java</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>Python</li>
+          <li><strike>Scratch</strike> ;)</li>
+      </section>
+      <section>
+        <h3>Ones I've used once and <em>never</em> want to again (ranking)</h3>
+        <ol>
+          <li>ARM assembly</li>
+        </ol>
+        <aside>
+        Assembly wins by default here, but I'm sure it would still win even if there were more things listed. Working with something low level like assembly made me glad I wasn't born over a generation ago. Moreover, it made me realize C was never actually <b>that bad</b>, something I tend to forget whenever I see the helpful and incredibly descriptive error message <i>Segmentation fault</i>.
+        </aside>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <table width="400px">
+          <caption>Stuff I can and can't (yet) do:</caption>
+          <colgroup>
+            <col style="background-color: DDDDDD">
+          </colgroup
+          <tr>
+            <th></th>
+            <th>Can</th>
+            <th>Can't</th>
+          </tr>
+          <tr>
+            <th>Quit vim</th>
+            <td>✓</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Do CSS</th>
+            <td></td>
+            <td>✓</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+    <hr>
+    <div id="misc_info">
+      <h1>More About Me</h1>
+      <p> My favorite color:</p>
+      <svg width="200" height="200">
+        <circle cx="100" cy="100" r="90" stroke-width="0" fill="blue"/>
+      </svg>
+
+      <figure>
+        <picture>
+          <source srcset="https://aumne.github.io/cse110/lions.jpg" media="(min-width: 200px)"
+          <img src="https://aumne.github.io/cse110/lions.jpg" alt="Count the lions!">
+        </picture>
+        <figcaption>One of my favorite images.</figcaption>
+      </figure>
+    </div>
+  </main>
+  <footer>
+    <nav>
+        <a href="#top">Back to Top</a> |
+        <a href="#cs_stuff">CS Stuff</a> |
+        <a href="#more_about_me">More About Me</a>
+     </nav>
+  </footer>
+</body>
+</html>
