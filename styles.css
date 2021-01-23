@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
-body{
-   font-family: 'IBM Plex Sans', sans-serif;
+/* more turquoisey background for intro section */
+#top {
+   background-color: rgb(60, 200, 200)
+}
+
+/* make everything with class "center" centered, underlined, and dark blue */
+.center {
+   text-align: center;
+   text-decoration: underline;
+   color: #00008b;
 }
