@@ -78,14 +78,15 @@
         <ul>
           <li>I'm from San Diego and have lived here my whole life.</li>
           <li>I'm (somewhat) trilingual, speaking English (natively), Spanish (fluently), and Portuguese (not yet fluently but well enough).</li>
-          <li>I wasn't that interested in computer science until college, but I've been into linguistics since middle school.
+          <li>I wasn't that interested in computer science until college, but I've been into linguistics since middle school.</li>
+          <li>I woke up at 12:30pm on the day I wrote this sentence.</li>
         </ul>
       </details>
-      <p> My favorite color:</p>
+      <p>My favorite color:</p>
       <svg width="200" height="200">
         <circle cx="100" cy="100" r="90" stroke-width="0" fill="blue"/>
       </svg>
-
+      <canvas id="emptyCanvas">TBD</canvas>
       <figure>
         <picture>
           <source srcset="https://aumne.github.io/cse110/lions.jpg" media="(min-width: 200px)">
@@ -93,6 +94,10 @@
         </picture>
         <figcaption>One of my favorite images.</figcaption>
       </figure>
+      <p>My voice:</p>
+      <audio controls="controls">
+        <source src="http://docs.google.com/uc?export=open&id=1cG4-1SY9JaUGcJ3H7q68sho3NU6JklZD" type="audio/mp3">
+      </audio>
     </div>
   </main>
   <hr>
@@ -100,12 +105,15 @@
     <form name="Pointless Survey">
       <fieldset>
         <legend>Pointless Survey:</legend>
+        <input type="hidden" id="invis" name="invis" value="weeee">
         <label for="color">What's your favorite color?</label>
-        <input type="text" id="color" name="color"><br><br>
+        <input type="color" id="color" name="color"><br><br>
         <label for="picfile">What's your favorite image?</label>
         <input type="file" id="picfile" name="picfile"><br><br>
         <label for="quitvim">Can you quit vim?</label>
         <input type="checkbox" id="quitvim" name="quitvim"><br><br>
+        <label for="vimcmd">If so, what command do you use?</label>
+        <input type="text" id="vimcmd" name="vimcmd"><br><br>
         <label for="language">What's your favorite programming language?</label>
         <select name="language" id="language">
           <option value="other">Other</option>
@@ -127,19 +135,25 @@
           <option value="Safari">
           <option value="Other">
         </datalist><br><br>
+        <label for="wakeup">When did you last wake up?</label>
+        <input type="time" id="wakeup" name="wakeup"><br><br>
+        <label for="bored">On a scale of 1 to 10, how bored are you right now?</label>
+        <input type="range" id="bored" name="bored" min="1" max="10"><br><br>
         <label for="lions">How many Lions in picture?</label>
         <input type="number" id="lions" name="lions" min="0"><br><br>
         <label for="comments">Anything else to say?</label>
         <textarea id="comments" name="comments" rows="2" cols="50"></textarea><br><br>
         <input type="submit" value="Submit">
         <button type="button" onclick="alert('This is a fake submit button.')">Submit</button>
+        <input type="reset" value="Reset">
       </fieldset>
     </form>
     <nav>
         <a href="#top">Back to Top</a> |
         <a href="#cs_info">CS Stuff</a> |
         <a href="#misc_info">More About Me</a>
-     </nav>
+    </nav>
+    <template>sneaky beaky</template>
   </footer>
 </body>
 </html>
