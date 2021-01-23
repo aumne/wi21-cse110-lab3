@@ -32,6 +32,8 @@ th, td {
    border-color: black;
    border-width: 1mm;
    border-radius: 5pt;
+   margin: 1px 2px 1px 2px
+   padding: 1px 2px 1px 2px
 }
 
 /* change background color of links at bottom of page to a contrasting color */
