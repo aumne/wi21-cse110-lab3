@@ -46,6 +46,6 @@ h3 + ol {
 }
 
 /* change background color of unordered lists after h3 (i.e. the first unordered list on the page) */
-h3 ~ ol {
+h3 ~ ul {
    background-color: mediumturqoise;
 }
