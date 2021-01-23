@@ -1,6 +1,7 @@
 /* more turquoisey background for intro section */
 #top {
-   background-color: rgb(60, 200, 200)
+   background-color: rgb(60, 200, 200);
+   font-weight: bold;
 }
 
 /* make everything with class "center" centered, underlined, and dark blue */
@@ -8,4 +9,14 @@
    text-align: center;
    text-decoration: underline;
    color: #00008b;
+}
+
+/* make fake submit button slightly discolored when hovered over */
+button[type="button]:hover {
+   color: hsl(0, 0%, 85%);
+}
+
+/* make fake submit button red when pressed */
+button[type="button]:active {
+   color: hsl(0, 100%, 40%);
 }
