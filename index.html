@@ -11,6 +11,9 @@
       background-color: lightblue;
       font-family: 'IBM Plex Sans', sans-serif;
     }
+    p.hidden {
+      display: none; 
+    }
   </style>
 </head>
 <body>
@@ -20,6 +23,7 @@
       <p>
       I'm Diego Alfaro, a third-year undergrad double majoring in <span>computer science</span> and <span>linguistics</span> at UCSD.
       </p>
+      <p class="hidden"></p>
       <nav>
         <a href="#cs_info">My CS Knowledge</a> |
         <a href="#misc_info">More About Me</a>
@@ -55,7 +59,7 @@
       <section>
         <h2>Skills</h2>
         This is more or less a summary or what I can and can't do <strong>(yet)</strong>.
-        <table>
+        <table style="display: block; width: 100%; max-width: 1000px; min-width: 250px;">
           <caption>Stuff I can and can't (yet) do:</caption>
           <colgroup>
             <col span="3" style="background-color: white">
