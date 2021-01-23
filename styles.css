@@ -13,10 +13,10 @@
 
 /* make fake submit button slightly discolored when hovered over */
 button[type="button"]:hover {
-   color: hsl(0, 0%, 85%);
+   color: hsl(0, 0%, 75%);
 }
 
-/* make fake submit button red when pressed */
-button[type="button"]:active {
+/* make links red while pressed */
+a:active {
    color: hsl(0, 100%, 40%);
 }
