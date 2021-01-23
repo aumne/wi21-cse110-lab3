@@ -23,9 +23,13 @@ a:active {
 
 * {
    margin: auto;
+   padding: auto;
+}
+
+/* surround table cells with border */
+th, td {
    border-style: solid;
    border-color: black;
    border-width: 1mm;
-   border-radius: 1pt;
-   padding: auto;
+   border-radius: 5pt;
 }
