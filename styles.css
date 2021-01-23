@@ -20,3 +20,12 @@ button[type="button"]:hover {
 a:active {
    color: hsl(0, 100%, 40%);
 }
+
+* {
+   margin: auto;
+   border-style: solid;
+   border-color: black;
+   border-width: 5mm;
+   border-radius: 10pt;
+   padding: auto;
+}
