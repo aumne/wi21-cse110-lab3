@@ -33,3 +33,19 @@ th, td {
    border-width: 1mm;
    border-radius: 5pt;
 }
+
+/* change background color of links at bottom of page to a contrasting color */
+footer nav {
+   background-color: mintcream;
+}
+
+/* change background and text colors of ordered lists immediately after h3 (i.e. the only ordered list on the page) */
+h3 + ol {
+   background-color: maroon;
+   color: mintcream;
+}
+
+/* change background color of unordered lists after h3 (i.e. the first unordered list on the page) */
+h3 ~ ol {
+   background-color: mediumturqoise;
+}
