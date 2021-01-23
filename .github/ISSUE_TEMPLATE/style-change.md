@@ -3,7 +3,7 @@ name: Style change
 about: Suggest non-bug related changes to CSS
 title: ''
 labels: style
-assignees: ''
+assignees: aumne
 
 ---
 
