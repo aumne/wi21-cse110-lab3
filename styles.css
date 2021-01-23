@@ -26,6 +26,6 @@ a:active {
    border-style: solid;
    border-color: black;
    border-width: 1mm;
-   border-radius: 10pt;
+   border-radius: 1pt;
    padding: auto;
 }
