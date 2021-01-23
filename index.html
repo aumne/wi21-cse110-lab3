@@ -31,7 +31,7 @@
           <li>C</li>
           <li>C++</li>
           <li>Python</li>
-          <li><strike>Scratch</strike> ;)</li>
+        </ul>
       </section>
       <section>
         <h3>Ones I've used once and <em>never</em> want to again (ranking)</h3>
@@ -39,16 +39,19 @@
           <li>ARM assembly</li>
         </ol>
         <aside>
-        Assembly wins by default here, but I'm sure it would still win even if there were more things listed. Working with something low level like assembly made me glad I wasn't born over a generation ago. Moreover, it made me realize C was never actually <b>that bad</b>, something I tend to forget whenever I see the helpful and incredibly descriptive error message <i>Segmentation fault</i>.
+        Assembly wins by default here, but I'm sure it would still win even if there were more things listed. Working with something low level like assembly made me glad I wasn't born over a generation ago. Moreover, it made me realize C was never actually <b>that bad</b>, something I tend to forget whenever I see the helpful and <i>incredibly descriptive</i> error message <pre>s   E  g
+            m   e   N    Ta   t  i      O
+                                               n      f    A    u   l   T</pre>.
         </aside>
       </section>
       <section>
         <h2>Skills</h2>
-        <table width="400px">
+        This is more or less a summary or what I can and can't do <strong>(yet)</strong>.
+        <table>
           <caption>Stuff I can and can't (yet) do:</caption>
           <colgroup>
-            <col style="background-color: DDDDDD">
-          </colgroup
+            <col span="3" style="background-color: white">
+          </colgroup>
           <tr>
             <th></th>
             <th>Can</th>
@@ -70,6 +73,14 @@
     <hr>
     <div id="misc_info">
       <h1>More About Me</h1>
+      <details>
+        <summary>Random Facts About Me</summary>
+        <ul>
+          <li>I'm from San Diego and have lived here my whole life.</li>
+          <li>I'm (somewhat) trilingual, speaking English (natively), Spanish (fluently), and Portuguese (not yet fluently but well enough).</li>
+          <li>I wasn't that interested in computer science until college, but I've been into linguistics since middle school.
+        </ul>
+      </details>
       <p> My favorite color:</p>
       <svg width="200" height="200">
         <circle cx="100" cy="100" r="90" stroke-width="0" fill="blue"/>
@@ -77,18 +88,57 @@
 
       <figure>
         <picture>
-          <source srcset="https://aumne.github.io/cse110/lions.jpg" media="(min-width: 200px)"
-          <img src="https://aumne.github.io/cse110/lions.jpg" alt="Count the lions!">
+          <source srcset="https://aumne.github.io/cse110/lions.jpg" media="(min-width: 200px)">
+          <img src="https://aumne.github.io/cse110/lions.jpg" alt="count the lions">
         </picture>
         <figcaption>One of my favorite images.</figcaption>
       </figure>
     </div>
   </main>
+  <hr>
   <footer>
+    <form name="Pointless Survey">
+      <fieldset>
+        <legend>Pointless Survey:</legend>
+        <label for="color">What's your favorite color?</label>
+        <input type="text" id="color" name="color"><br><br>
+        <label for="picfile">What's your favorite image?</label>
+        <input type="file" id="picfile" name="picfile"><br><br>
+        <label for="quitvim">Can you quit vim?</label>
+        <input type="checkbox" id="quitvim" name="quitvim"><br><br>
+        <label for="language">What's your favorite programming language?</label>
+        <select name="language" id="language">
+          <option value="other">Other</option>
+          <optgroup label="C squad">
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+          </optgroup>
+          <optgroup label="No pointers squad">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+          </optgroup>
+        </select><br><br>
+        <label for="browserlist">What browser are you using?</label>
+        <input list="browsers" name="browserlist" id="browserlist">
+        <datalist id="browsers">
+          <option value="Chrome">
+          <option value="Firefox">
+          <option value="Edge">
+          <option value="Safari">
+          <option value="Other">
+        </datalist><br><br>
+        <label for="lions">How many Lions in picture?</label>
+        <input type="number" id="lions" name="lions" min="0"><br><br>
+        <label for="comments">Anything else to say?</label>
+        <textarea id="comments" name="comments" rows="2" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+        <button type="button" onclick="alert('This is a fake submit button.')">Submit</button>
+      </fieldset>
+    </form>
     <nav>
         <a href="#top">Back to Top</a> |
-        <a href="#cs_stuff">CS Stuff</a> |
-        <a href="#more_about_me">More About Me</a>
+        <a href="#cs_info">CS Stuff</a> |
+        <a href="#misc_info">More About Me</a>
      </nav>
   </footer>
 </body>
