@@ -11,7 +11,7 @@
    color: #00008b;
 }
 
-/* make fake submit button darker when hovered over */
+/* make fake submit button text lighter when hovered over */
 button[type="button"]:hover {
    color: hsl(0, 0%, 50%);
 }
